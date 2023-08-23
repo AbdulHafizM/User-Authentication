@@ -5,8 +5,8 @@ const MongoDBSession = require('connect-mongodb-session')(session)
 require('dotenv').config()
 const app = express()
 
-
 app.use(express.static('./public'))
+
 
 const store = new MongoDBSession({
     uri: process.env.MONGO_URI,
@@ -23,8 +23,6 @@ app.use(session({
 
 
 app.get('/',(req,res)=>{
-    req.session.isAuth = true  
-    console.log(req.session)
     res.send('Hello')
 })
 
@@ -40,5 +38,6 @@ const start = async() => {
 }
 
 start()
+
 
 
