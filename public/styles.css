@@ -179,7 +179,7 @@ ul {
 }
 /* form */
 
-.form {
+.wrapper {
   width: 90vw;
   max-width: var(--fixed-width);
   background: var(--white);
@@ -188,7 +188,7 @@ ul {
   padding: 2rem 2.5rem;
   margin: 3rem auto;
 }
-.form-label {
+.wrapper.form-label {
   display: block;
   font-size: var(--smallText);
   margin-bottom: 0.5rem;
@@ -292,3 +292,4 @@ ul {
 .text-success {
   color: var(--green-dark);
 }
+
