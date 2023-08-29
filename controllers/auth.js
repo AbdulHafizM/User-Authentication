@@ -12,7 +12,6 @@ const login = async(req,res) => {
     if(!isMatch){
         return res.redirect('/login')
     }
-
     req.session.isAuth = true
     res.redirect('/dashboard')
 }
